@@ -30,9 +30,29 @@ img {
   font-size: 16px;
   font-weight: 700;
   padding: 15px 60px;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  0%{
+    background-color: red;
+  }
+  20%{
+    background-color: blueviolet;
+  }
+  40%{
+    background-color: grey;
+  }
+  60%{
+    background-color: orange;
+  }
+  80%{
+    background-color: green;
+  }
+  100%{
+    background-color: purple;
+  }
 }
 .btn-secondary:hover {
-  background-color: rgb(255, 255, 255);
   color: rgb(119, 119, 119);
 }
 .btn-primary {
@@ -81,6 +101,27 @@ nav {
 .header-img {
   margin-left: 7%;
   width: 80%;
+  animation: shake .8s ease-in;
+}
+@keyframes shake{
+  0%{
+    transform: translate(0);
+  }
+  20%,
+  40%,
+  60%,
+  80%{
+      transform: translate(.8em);
+    }
+  10%,
+  30%,
+  50%{
+    transform: translate(-.4em);
+  }
+  70%,
+  100%{
+    transform: translate(0);
+  }
 }
 .please{
     margin-left: 20%;
